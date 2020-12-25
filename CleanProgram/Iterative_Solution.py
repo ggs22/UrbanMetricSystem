@@ -15,7 +15,7 @@ import sys,os
 sys.path.append("H:/Python/___JBasics")
 from JQgis import JVectorLayer as JV
 import JGeom
-from JPlot import JPlot
+import JPlot
 
 
 ###############################################################################
