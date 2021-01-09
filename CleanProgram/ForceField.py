@@ -11,11 +11,13 @@ Created on Thu Feb 08 11:05:28 2018
 ######################################################################
 
 import sys,os
-sys.path.append("H:/Python/___JBasics")
+# sys.path.append("H:/Python/___JBasics")
+sys.path.append("C:/repos/UrbanMetricSystem")
 from JQgis import JVectorLayer as JV
+from JQgis import JGeom
+
 from numba import jit
 import itertools
-import JGeom
 import multiprocessing as mp
 from copy import deepcopy
 import numpy as np
