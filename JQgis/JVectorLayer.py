@@ -13,7 +13,9 @@ if 'GDAL_DATA' not in os.environ:
     os.environ['GDAL_DATA'] = 'C:/Users/GelbJ/Documents/New_Anaconda27/Library/share/gdal' #Ordi Labo
 
 import numpy as np
-import JGeom
+import sys
+sys.path.append("C:/repos/UrbanMetricSystem")
+from JQgis import JGeom
 from .QuadTree import Index as QdIndex
 from numpy.lib import recfunctions
 from osgeo import ogr,osr

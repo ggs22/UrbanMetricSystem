@@ -12,17 +12,19 @@ Created on Sat Apr 07 22:31:06 2018
 from ForceField import CalculateForceAtPoints
 from FindBorderV2 import FindVectorBorder, MeanBorder ,CatmullRomChain, FindCenter, OptimalPosition
 import sys,os
-sys.path.append("H:/Python/___JBasics")
+# sys.path.append("H:/Python/___JBasics")
+sys.path.append("C:/repos/UrbanMetricSystem")
 from JQgis import JVectorLayer as JV
-import JGeom
+from JQgis import JGeom
 import JPlot
-
 
 ###############################################################################
 ##definitio des parametres generaux
 ###############################################################################
 Distances = [44,42,30,25,22,20,15,12,10]
 
+
+#TODO: un-hardcode these parameters
 #####
 # Montreal Config 2016
 #####

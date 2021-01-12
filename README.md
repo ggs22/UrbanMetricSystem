@@ -37,3 +37,24 @@ This project uses Python 3.8
 
     # from root directory of this project
     pip3 install -r requirements.txt
+
+
+##### Windows/MacOS
+The easiest way to install the GDAL python bindings for Windows and MacOS is through [Anaconda](https://www.anaconda.com/).
+
+
+###### 1 install Anaconda
+
+###### 2 (Recomended) Create a virtual environment in Anaconda
+
+![](images/ums_install_steps.png)
+
+
+###### 3 Install gdal bindings
+
+![](images/ums_install_steps_2.png)
+
+###### 4 Install Python packages batch
+
+    # from root directory of this project
+    pip3 install -r requirements.txt

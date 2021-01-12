@@ -14,7 +14,8 @@ import numpy as np
 from ForceField import VectorForce
 sys.path.append("H:/Python/___JBasics")
 #from JPlot import JPlot
-import JGeom
+# import JGeom
+from JQgis import JGeom
 #from JQgis import JVectorLayer as JV
 
 ######################################################################
