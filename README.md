@@ -47,15 +47,14 @@ The easiest way to install the GDAL python bindings for Windows and MacOS is thr
 
 ###### 2 (Recomended) Create a virtual environment in Anaconda
 
-###### 3 Install libgal
-
-###### 4 Install gdalbin
-
-###### 5 Install GDAL in pip
+![](images/ums_install_steps.png)
 
 
-![safasdf](https://pasteboard.co/JJlFXFi.png)
+###### 3 Install gdal bindings
 
+![](images/ums_install_steps_2.png)
 
-![sadf](C:\Users\ggibe\Desktop\ums_install_steps.png)
+###### 4 Install Python packages batch
 
+    # from root directory of this project
+    pip3 install -r requirements.txt
