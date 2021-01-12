@@ -11,30 +11,51 @@
 
 ###### v0.1
 Version 0.1 is the version of the Urban Metric System program as
-realized by Jeremy Gelb according to [this article](./Tellier_et_al-2018-Regional_Science_Policy__26_Practice.pdf)
+realized by Jeremy Gelb according to [this article](./Tellier_et_al-2018-Regional_Science_Policy__26_Practice.pdf).
+
+##### Install dependencies:
+This project uses Python 3.8
+##### Ubuntu
+###### 1 Install GDAL binaries and headers
+
+    sudo apt install libgdal-dev gdal-bin
+
+###### 2 Set environment variables
+
+    export CPLUS_INCLUDE_PATH=/usr/include/gdal
+    export C_INCLUDE_PATH=/usr/include/gdal
+
+###### 3 (Recommended) create a virtual Python environment
+
+    python3 -m venv ~/.venv_ums
+    source ~/.venv_ums/bin/activate
+
+###### 4 Install osgeo (python binding for both GDAL and OGR)
+    pip3 install --global-option=build_ext --global-option="-I/usr/include/gdal" GDAL==`gdal-config --version`
+
+###### 5 install Python packages batch
+
+    # from root directory of this project
+    pip3 install -r requirements.txt
 
 
-###### installation:
-
-####### Unix
-
-GDAL (osgeo)
-https://trac.osgeo.org/gdal/wiki/GdalOgrInPython
-
-https://stackoverflow.com/questions/43587960/gdal-installation-error-using-pip
-
-https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
-
-https://ljvmiranda921.github.io/notebook/2019/04/13/install-gdal/#using-your-package-manager
+##### Windows/MacOS
+The easiest way to install the GDAL python bindings for Windows and MacOS is through [Anaconda](https://www.anaconda.com/).
 
 
-pip install --global-option=build_ext --global-option="-IC:\\repos\\UrbanMetricSystem\\2.2\\gdal\\port\\" GDAL==`gdal-config --version`
+###### 1 install Anaconda
 
-####### windows
-In Anaconda:
-    -install libgdal
-    -install gdal
-In command prompt:
-    -install pip packages using "pip install -r requirements.txt"
+###### 2 (Recomended) Create a virtual environment in Anaconda
 
+###### 3 Install libgal
+
+###### 4 Install gdalbin
+
+###### 5 Install GDAL in pip
+
+
+![safasdf](https://pasteboard.co/JJlFXFi.png)
+
+
+![sadf](C:\Users\ggibe\Desktop\ums_install_steps.png)
 
