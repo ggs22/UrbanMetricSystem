@@ -15,13 +15,14 @@ import sys
 sys.path.append("H:/Python/___JBasics")
 from JQgis import JVectorLayer as JV
 import JGeom
-from JPlot import JPlot
+import JPlot
 
 ###############################################################################
 # Definition des parametres principaux
 ###############################################################################
 
-Background = "E:/Projets/Luc_Normand/Montreal Datas/2006/MASK.shp"
+# Background = "E:/Projets/Luc_Normand/Montreal Datas/2006/MASK.shp"
+Background = "../Data/Montreal/MASK.shp"
 LayerB = JV.JFastLayer(Background)
 LayerB.Initialize(ID="OID",GeomIndex=False)
 BackPoly = LayerB.Geoms.values()
